@@ -1,139 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Anoushka Gurung | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anoushka Gurung | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f8fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 40px;
-            line-height: 1.6;
-            color: #333;
-        }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 24px;
+    }
 
-        h1 {
-            color: #1f4e79;
-        }
+    .hero {
+      background: white;
+      padding: 50px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      margin-bottom: 35px;
+    }
 
-        h2 {
-            border-bottom: 2px solid #1f4e79;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
 
-        .project {
-            background: #f4f4f4;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+    .subtitle {
+      font-size: 20px;
+      color: #334155;
+      margin-bottom: 20px;
+    }
 
-        .button {
-            display: inline-block;
-            background: #1f4e79;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
+    .buttons a {
+      display: inline-block;
+      margin: 8px 8px 0 0;
+      padding: 10px 16px;
+      background: #1d4ed8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
 
-        .skills span {
-            display: inline-block;
-            background: #e8eef5;
-            padding: 8px 12px;
-            border-radius: 20px;
-            margin: 5px;
-        }
-    </style>
+    section {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      color: #0f172a;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 20px;
+      background: #f9fafb;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1d4ed8;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0f172a;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<h1>Anoushka Gurung</h1>
+    <div class="hero">
+      <h1>Anoushka Gurung</h1>
+      <p class="subtitle">Business Analytics Graduate | Data Analytics | Business Intelligence | Marketing Analytics</p>
+      <p>
+        Recent Augustana College graduate based in Peoria, IL with experience in analytics, reporting,
+        marketing performance analysis, business intelligence, and data visualization.
+      </p>
 
-<p>
-Business Analytics Graduate | Data Analyst | Business Intelligence
-</p>
+      <div class="buttons">
+        <a href="mailto:grganoushka@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/anoushka-gurung-b23512272" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AnoushkaG14" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<a class="button" href="https://linkedin.com/in/anoushka-gurung-b23512272">
-LinkedIn
-</a>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I combine business analytics and communication skills to turn data into clear, actionable insights.
+        My experience includes client financial data management at H&R Block, marketing analytics at Level Up USA,
+        access control reporting at Augustana College, and project-based work involving regression analysis,
+        dashboards, and data storytelling.
+      </p>
+    </section>
 
-<a class="button" href="https://github.com/AnoushkaG14">
-GitHub
-</a>
+    <section>
+      <h2>Featured Projects</h2>
 
-<h2>About Me</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Senior Capstone: Unemployment and Violent Crime Analysis</h3>
+          <p>
+            Analyzed the relationship between unemployment rates and violent crime rates across U.S. states
+            using FBI and BLS datasets.
+          </p>
+          <p><span class="highlight">Tools:</span> Excel, Regression Analysis, Data Visualization</p>
+          <ul>
+            <li>Built state-level dataset using FBI and BLS sources</li>
+            <li>Performed regression analysis and interpreted statistical results</li>
+            <li>Presented findings through written report and presentation</li>
+          </ul>
+        </div>
 
-<p>
-Recent graduate from Augustana College with experience in data analytics,
-business intelligence, marketing analytics, and data visualization.
-Passionate about using data to solve business problems and support
-decision-making.
-</p>
+        <div class="card">
+          <h3>Adaptive Assistive Cane | Best Hardware Project Winner</h3>
+          <p>
+            Built a low-cost smart assistive cane prototype during HackAugie, a collegiate hackathon focused on
+            technology and innovation.
+          </p>
+          <p><span class="highlight">Tools:</span> Raspberry Pi Pico, Python, Ultrasonic Sensors</p>
+          <ul>
+            <li>Programmed obstacle detection logic using Python</li>
+            <li>Integrated buzzer and LED feedback systems</li>
+            <li>Won Best Hardware Project</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<h2>Featured Projects</h2>
+    <section>
+      <h2>Experience Highlights</h2>
 
-<div class="project">
-<h3>Crime & Unemployment Data Analysis (Senior Capstone)</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>Marketing Analyst Intern</h3>
+          <p><strong>Level Up USA</strong></p>
+          <p>
+            Analyzed campaign performance data including CTR and ROI, segmented customer data,
+            and presented insights through reports and dashboards.
+          </p>
+        </div>
 
-<p>
-Analyzed the relationship between unemployment rates and violent crime
-rates across all 50 U.S. states using FBI and BLS datasets.
-</p>
+        <div class="card">
+          <h3>Client Service Professional</h3>
+          <p><strong>H&R Block</strong></p>
+          <p>
+            Managed and verified client financial data, maintained confidentiality,
+            and used Excel/internal systems to organize client records during tax season.
+          </p>
+        </div>
 
-<ul>
-<li>Performed regression analysis and data visualization</li>
-<li>R² = 0.2065</li>
-<li>p-value = 0.000915</li>
-<li>Presented findings through research presentations and reports</li>
-</ul>
-</div>
+        <div class="card">
+          <h3>Access Control Assistant</h3>
+          <p><strong>Augustana College</strong></p>
+          <p>
+            Analyzed access logs, generated audit-ready reports, and supported secure data and system workflows.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<div class="project">
-<h3>Adaptive Assistive Cane</h3>
+    <section>
+      <h2>Technical Skills</h2>
+      <div>
+        <span class="tag">Excel</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Tableau</span>
+        <span class="tag">Python</span>
+        <span class="tag">R</span>
+        <span class="tag">Regression Analysis</span>
+        <span class="tag">Data Visualization</span>
+        <span class="tag">Dashboarding</span>
+        <span class="tag">Marketing Analytics</span>
+        <span class="tag">Business Intelligence</span>
+        <span class="tag">Reporting</span>
+      </div>
+    </section>
 
-<p>
-Award-winning assistive technology prototype developed during a collegiate
-hackathon.
-</p>
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:grganoushka@gmail.com">grganoushka@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/anoushka-gurung-b23512272" target="_blank">linkedin.com/in/anoushka-gurung</a></p>
+      <p>GitHub: <a href="https://github.com/AnoushkaG14" target="_blank">github.com/AnoushkaG14</a></p>
+    </section>
 
-<ul>
-<li>Built using Raspberry Pi Pico and Python</li>
-<li>Integrated ultrasonic obstacle detection</li>
-<li>Won Best Hardware Project</li>
-<li>Developed functional prototype in under 24 hours</li>
-</ul>
-</div>
+    <footer>
+      © 2026 Anoushka Gurung
+    </footer>
 
-<h2>Technical Skills</h2>
-
-<div class="skills">
-<span>Excel</span>
-<span>SQL</span>
-<span>Power BI</span>
-<span>Tableau</span>
-<span>Python</span>
-<span>R</span>
-<span>Data Visualization</span>
-<span>Regression Analysis</span>
-<span>Dashboarding</span>
-<span>Business Intelligence</span>
-</div>
-
-<h2>Contact</h2>
-
-<p>Email: anoushkaaaa14@gmail.com</p>
-
-<p>
-LinkedIn:
-<a href="https://linkedin.com/in/anoushka-gurung-b23512272">
-linkedin.com/in/anoushka-gurung-b23512272
-</a>
-</p>
-
+  </div>
 </body>
 </html>
